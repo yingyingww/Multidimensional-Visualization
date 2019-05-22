@@ -20,9 +20,17 @@ leak_check_pressure: a metric corresponding to the pressure of the gas meant to 
 tufte_metric: the metric Tufte created to measure the damage experienced by the O-rings during launch, described in the reading <br />
 
 
-#### What animations/interactions do these visualizations contain?
+### What animations/interactions do these visualizations contain?
+
+##### Scatterplot Matrix
+![alt text](screenshots/PartI.png "partI")
+![alt text](screenshots/PartIclicked.png "clicked")
 
 For the scatterplot matrix, hovering over an item will display the label for that item and enlarge it in each of the plots. Clicking on a point will change its color to yellow in that plot and all corresponding plots. Clicking on that point again will change the color back to red. The point must be unselected before selecting another point. 
+
+##### Parallel Coordinates Plot
+![alt text](screenshots/PartII.png "partII")
+![alt text](screenshots/PartIIclicked.png "clicked")
 
 For the parallel coordinates plot, hovering over a point will enlarge that point and change its color to yellow and hovering over a line will display that line's values. Clicking a line will change the color of the whole line across all axis to yellow/orange (although if it is behind a green line it may not look like it is changing color). Clicking on the line again will change it back to green. The line must be unclicked before clicking on another line. 
 
