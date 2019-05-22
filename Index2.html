@@ -1,0 +1,69 @@
+<html>
+<!--
+Data Visualization
+Assignment 3, Oct 7th 2018, Part II Parallel Coordinates
+By Saahithi Rao and Yingying Wang
+We adopt a starting code from Lab1's scatterTutorial.html
+We relyed on 
+https://www.w3schools.com/html/
+to understand HTML
+-->
+<head>
+<script src="http://d3js.org/d3.v3.js" charset="utf-8"></script>
+<title>Parallel Coordinates in D3</title>
+<style type="text/css">
+	body {
+		font-family: sans-serif;
+		font-size: 12px;
+	}
+	.axis path,
+	.axis line {
+		fill: none;
+		stroke: #000;
+		shape-rendering: crispEdges;
+	}
+
+	circle {
+		fill: #f00;
+		stroke: #000;
+	}
+	.label {
+		text-anchor: middle;
+		font-size: 8px;
+		font-weight: bold;
+		cursor: pointer;
+	}
+</style>
+</head>
+
+<body>
+    <h1> Data Visualization Assignment 3 </h1>
+    <h3> By Saahithi Rao and Yingying Wang</h3>
+        
+    
+    <h2>Part II: Parallel Coordinates</h2> 
+    
+    <!--
+    This is to display the values of data when moused over
+    -->
+    <div class="infobox" style="visibility: hidden;" >
+    <p>Flight Index: <strong class="flight_index"></strong> &nbsp &nbsp
+    The Number of Distressed O-rings: <strong class="num_o_ring_distress"></strong> &nbsp &nbsp
+    Launched Temperature: <strong class="launch_temp"></strong>&nbsp  &nbsp
+    Leak Check Pressure: <strong class="leak_check_pressure"></strong>&nbsp &nbsp
+    Tufte Metric: <strong class="tufte_metric"></strong></p> 
+    </div>
+    
+    
+    <div id="pointsSVG"></div>
+    
+        <!--javascript source code-->
+	<script type="text/javascript" src="part2.js"></script>
+
+
+</body>
+
+
+
+</html>
+   

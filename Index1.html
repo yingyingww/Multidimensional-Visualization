@@ -1,0 +1,109 @@
+<html>
+<!--
+Data Visualization
+Assignment 3, Oct 7th 2018, Part I Scatterplot matrix
+By Saahithi Rao and Yingying Wang
+We adopt a starting code from Lab1's scatterTutorial.html
+We relyed on 
+https://www.w3schools.com/html/
+to understand HTML
+-->
+<head>
+<script src="http://d3js.org/d3.v3.js" charset="utf-8"></script>
+<title>Scatterplot matrix in D3</title>
+<style type="text/css">
+	body {
+		font-family: sans-serif;
+		font-size: 12px;
+	}
+	.axis path,
+	.axis line {
+		fill: none;
+		stroke: #000;
+		shape-rendering: crispEdges;
+	}
+
+	circle {
+		fill: #f00;
+		stroke: #000;
+	}
+	.label {
+		text-anchor: middle;
+		font-size: 8px;
+		font-weight: bold;
+		cursor: pointer;
+	}
+</style>
+</head>
+
+<body>
+    <h1> Data Visualization Assignment 3 </h1>
+    <h3> By Saahithi Rao and Yingying Wang</h3>
+        
+    <h2>Part I: Scatterplot matrix</h2>    
+    <!--
+    This is to display the values of data when moused over
+    -->
+    <div class="infobox" style="visibility: hidden;" >
+    <p>Flight Index: <strong class="flight_index"></strong> &nbsp &nbsp
+    The Number of Distressed O-rings: <strong class="num_o_ring_distress"></strong> &nbsp &nbsp
+    Launched Temperature: <strong class="launch_temp"></strong>&nbsp  &nbsp
+    Leak Check Pressure: <strong class="leak_check_pressure"></strong>&nbsp &nbsp
+    Tufte Metric: <strong class="tufte_metric"></strong></p> 
+    </div>
+    
+    <!--This part displays scatter plots in a table to create the scatterplot matrices -->
+    <table  width = "1000" height = "1000">
+        <!--first row-->
+         <tr>
+             <th>Flight Index</th>
+             <td><div id="graph1_2"></div></td>
+             <td><div id="graph1_3"></div></td>
+             <td><div id="graph1_4"></div></td>
+             <td><div id="graph1_5"></div></td>
+         </tr>
+        <!--second row-->
+         <tr>
+             <td><div id="graph2_1"></div></td>
+             <th>The Number of distressed O-rings</th>
+             <td><div id="graph2_3"></div></td>
+             <td><div id="graph2_4"></div></td>
+             <td><div id="graph2_5"></div></td>
+         </tr>
+        <!--third row-->
+        <tr>
+            <td><div id="graph3_1"></div></td>
+            <td><div id="graph3_2"></div></td>
+             <th>Launched Temperature (in Fahrenheit)</th>
+             <td><div id="graph3_4"></div></td>
+             <td><div id="graph3_5"></div></td>
+        </tr>
+        <!--fourth row-->
+        <tr>
+            <td><div id="graph4_1"></div></td>
+            <td><div id="graph4_2"></div></td>
+             <td><div id="graph4_3"></div></td>
+            <th>Leak Check Pressure</th>
+             <td><div id="graph4_5"></div></td>
+         </tr>
+        <!--fifth row-->
+        <tr>
+            <td><div id="graph5_1"></div></td>
+            <td><div id="graph5_2"></div></td>
+             <td><div id="graph5_3"></div></td>
+             <td><div id="graph5_4"></div></td>
+             <th>Tufte Metric</th>
+         </tr>
+      </table>
+    
+
+        <!--javascript source code-->
+	<script type="text/javascript" src="part1.js"></script>
+
+
+</body>
+
+
+
+</html>
+   
