@@ -1,9 +1,12 @@
-Assignment #3
-Authors: Yingying Wang and Saahithi Rao
+# Assignment #3
+### Authors: Yingying Wang and Saahithi Rao
 
-Instructions to Open Files:
-Type python3 -m http.server in the terminal. 
-Navigate to localhost:8000 in chrome. 
+### Instructions to Open Files:
+```
+$ python3 -m http.server
+``` 
+Navigate to localhost:8000 in Chrome. 
+
 Click on Index1.html, which corresponds to the scatterplot matrix. 
 Click on Index2.html, which corresponds to the parallel coordinates plot. 
 
