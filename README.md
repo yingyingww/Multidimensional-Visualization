@@ -10,17 +10,17 @@ Navigate to localhost:8000 in Chrome.
 Click on Index1.html, which corresponds to the scatterplot matrix. 
 Click on Index2.html, which corresponds to the parallel coordinates plot. 
 
+### Dataset
 These visualizations use the Challenger dataset. 
-This data comes from a combination of sources: a UCI Machine Learning Repository and the metric that Tufte generated for seriousness of damage. The attributes are:
+This data comes from a combination of sources: a UCI Machine Learning Repository and the metric that Tufte generated for seriousness of damage. The attributes are:<br />
+flight_index: corresponds to the temporal order in which the flights were launched <br />
+num_o_ring_distress: the number of O-rings that experienced distress during the launch <br />
+launch_temp: the temperature in degrees Fahrenheit at launch <br />
+leak_check_pressure: a metric corresponding to the pressure of the gas meant to be contained by the O-rings <br />
+tufte_metric: the metric Tufte created to measure the damage experienced by the O-rings during launch, described in the reading <br />
 
-flight_index: corresponds to the temporal order in which the flights were launched
-num_o_ring_distress: the number of O-rings that experienced distress during the launch
-launch_temp: the temperature in degrees Fahrenheit at launch
-leak_check_pressure: a metric corresponding to the pressure of the gas meant to be contained by the O-rings
-tufte_metric: the metric Tufte created to measure the damage experienced by the O-rings during launch, described in the reading
 
-
-What animations/interactions do these visualizations contain?
+#### What animations/interactions do these visualizations contain?
 
 For the scatterplot matrix, hovering over an item will display the label for that item and enlarge it in each of the plots. Clicking on a point will change its color to yellow in that plot and all corresponding plots. Clicking on that point again will change the color back to red. The point must be unselected before selecting another point. 
 
@@ -28,7 +28,7 @@ For the parallel coordinates plot, hovering over a point will enlarge that point
 
 
 
-What purpose do they serve? 
+#### What purpose do they serve? 
 
 The scatterplot matrix shows the relationship of each variable in the dataset to all other variables. The viewer can see how all the variables compare to one another by focusing on each simple scatterplot. The matrix, then, helps faciliate comparisons across multiple variables without complicating the visualization as one can focus on a specific plot and look vertically and horizontally to see that variable in a different plot. The matrix also does not infer a dependent and independent variable as the mirror image is displayed on either side of the diagonal. Since red is a primary color in computer science, we used red to encode the points in order to make them stand out and draw the viewers attention to individual points. We chose to change the color of the points to yellow when selected to provide a strong contrast to the red. The yellow is clearly visible in the midst of the red points in all the plots. This color change allows the viewer to inspect that point's individual values in each plot and illustrates how that point falls in comparison to the other data points. From a big-picture perspective we can see how that point is positioned, whether it is an outlier with extremely high or low values for all the measurements or whether that point has more average values. This allows us to see what an "average" point will look like across all plots in relation to the distribution of all points, which will help us better understand the data than just a number average. For example, leak check pressure is high across all launched temperatures and launched temperatures are spread evenly across all flights, which signals a question about the pressure. We also added a hovering effect to display the point's values in an info box. We placed this info box at the top of the visualization to make it easier to read, which is especially helpful when moving the mouse quickly over multiple points. The info box helps quantify the values of each point in addition to the color encoding. We can hover over the few points that recieved a score of eleven on the tufte metric scale and see the exact values of that point. 
 
