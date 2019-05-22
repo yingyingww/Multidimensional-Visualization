@@ -1,4 +1,4 @@
-# Assignment #3
+# Multidimensional Visualization
 ### Authors: Yingying Wang and Saahithi Rao
 
 ### Instructions to Open Files:
