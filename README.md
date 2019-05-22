@@ -13,7 +13,7 @@ Click on Index2.html, which corresponds to the parallel coordinates plot.
 ### Dataset
 These visualizations use the Challenger dataset. 
 This data comes from a combination of sources: a UCI Machine Learning Repository and the metric that Tufte generated for seriousness of damage. The attributes are:<br />
-⋅⋅⋅flight_index: corresponds to the temporal order in which the flights were launched <br />
+⋅⋅⋅ flight_index: corresponds to the temporal order in which the flights were launched <br />
 ⋅⋅⋅num_o_ring_distress: the number of O-rings that experienced distress during the launch <br />
 ⋅⋅⋅launch_temp: the temperature in degrees Fahrenheit at launch <br />
 ⋅⋅⋅leak_check_pressure: a metric corresponding to the pressure of the gas meant to be contained by the O-rings <br />
